@@ -23,16 +23,9 @@ class DojoJunto
   end
   
   def converter number
-    if number == 1
-      "I"
-    elsif number == 2
-      "II"
-    elsif number == 5
-      "V"
-    elsif number == 10
-      "X"
-    end
-      
+    result = ""
+    number.times { |i| result +=  "I" }
+    result
   end
   
 end
