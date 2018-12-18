@@ -2,10 +2,11 @@ class DojoJunto
   
   def soma_romanos param1, param2
     
-    param1_d = param1.split.collect{|p| biblioteca p}
-    param2_d = param2.split.collect{|p| biblioteca p}
-    
-    soma = param1_d.first + param2_d.first
+    param1_d = param1.split("").collect{|p| biblioteca p}
+    param2_d = param2.split("").collect{|p| biblioteca p}
+    puts "=> #{param2.split("")}"
+    puts "=> #{param1_d + param2_d}"
+    soma = (param1_d + param2_d).sum
     converter soma
     
   end
