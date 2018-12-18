@@ -14,11 +14,11 @@ describe DojoJunto do
   it "deveria somar II + I e retornar III" do
     expect(test("II", "I")).to eq("III")
   end
-=begin
+
   it "deveria somar I + III e retornar IV" do
     expect(test("I", "III")).to eq("IV")
   end
-
+=begin
   it "deveria somar III + I e retornar IV" do
     expect(test("III", "I")).to eq("IV")
   end

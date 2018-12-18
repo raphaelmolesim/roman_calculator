@@ -6,8 +6,8 @@ class DojoJunto
     param2_d = param2.split("").collect{|p| biblioteca p}
     puts "=> #{param2.split("")}"
     puts "=> #{param1_d + param2_d}"
-    soma = (param1_d + param2_d).sum
-    converter soma
+    decimal = (param1_d + param2_d).sum
+    converter decimal
     
   end
   
@@ -24,10 +24,28 @@ class DojoJunto
   end
   
   def converter number
-    result = ""
-    number.times { |i| result +=  "I" }
-    puts result
-    result
+    case number 
+    when 1
+       "I"
+    when 2
+      "II"
+    when 3
+      "III"
+    when 4
+      "IV"
+    when 5
+      "V"
+    when 6
+      "VI"
+    when 7
+      "VII"
+    when 8
+      "VIII"      
+    when 9
+      "IX"
+    when 10
+      "X"                  
+    end
   end
   
 end
