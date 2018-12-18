@@ -25,6 +25,7 @@ class DojoJunto
   def converter number
     result = ""
     number.times { |i| result +=  "I" }
+    puts result
     result
   end
   
